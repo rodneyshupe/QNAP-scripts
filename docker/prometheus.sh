@@ -21,4 +21,4 @@ docker run \
     --network prometheus \
     --publish 9091:9091 \
     --restart always \
-    image: prom/pushgateway
+    prom/pushgateway
