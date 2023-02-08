@@ -12,9 +12,9 @@ docker run \
     --volume "/:/host:ro,rslave" \
     --volume "/:/rootfs:ro" \
     --volume "/etc/hostname:/etc/host_hostname" \
-    --volume "/etc/hostname:/etc/hostnam" \
+    --volume "/etc/hostname:/etc/hostname" \
     --volume "/etc/hostname:/etc/nodename" \
-    --env "HOST_HOSTNAME=/etc/host_hostname"
+    --env "HOST_HOSTNAME=/etc/host_hostname" \
     "quay.io/prometheus/node-exporter:${release}" \
         --path.rootfs=/host \
         --path.procfs=/host/proc \
