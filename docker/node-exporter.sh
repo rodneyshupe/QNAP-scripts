@@ -19,4 +19,6 @@ docker run \
         --path.rootfs=/host \
         --path.procfs=/host/proc \
         --path.sysfs=/host/sys \
-        --collector.mountstats
+        --collector.mountstats \
+        --collector.systemd \
+        --collector.processes
